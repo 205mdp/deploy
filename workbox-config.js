@@ -4,8 +4,9 @@ module.exports = {
 		'**/*.{svg,css,js,html}'
 	],
 	swDest: 'docs/sw.js',
-	ignoreURLParametersMatching: [
-		/^utm_/,
-		/^fbclid$/
-	]
+	swSrc: 'src/sw-template.js',
+	// ignoreURLParametersMatching: [
+	// 	/^utm_/,
+	// 	/^fbclid$/
+	// ]
 };
