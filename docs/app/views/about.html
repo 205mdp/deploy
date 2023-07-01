@@ -1,0 +1,46 @@
+<div class="scrollable">
+    <div class="scrollable-content">
+        <h3>About: </h3>
+
+        <div>
+
+
+            <ul>
+                <li>App: <strong> {{ about.app }}</strong> </li>
+                <li>Ver.: <strong>{{ about.version }}</strong> </li>
+                <li>Fecha: <strong>{{ about.fecha }}</strong> </li>
+            </ul>
+
+
+
+
+            <h4>Delete data</h4>
+            <p>Delete Data,  Checklist and Log.</p>
+
+            <button type="button" ng-click="borrartodo()" class="btn btn-default">
+                <i class="fa fa-trash-o" ></i>  Delete data
+            </button>
+
+            <h4>Language</h4>
+            <select ng-model="selectedLang" class="form-control" ng-change="updatelang()">
+              <option selected value="en">English</option>
+              <option value="hl">עברית</option>
+              <option value="es">Español</option>
+             
+            </select>
+
+            
+            <!--<ul>
+                <li ng-repeat-start="movie in movies | filter:name | orderBy:'releaseDate'">{{ movie.releaseDate | date:'dd/MM' }} - {{ movie.movieName }}</li>
+                <ul>
+                    <li ng-repeat="item in movie.items">{{ item.name }}</li>
+
+                </ul>
+
+                <li ng-repeat-end style="display:none"></li>
+            </ul >-->
+
+        </div>
+    </div>
+    </div>
+

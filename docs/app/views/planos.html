@@ -1,0 +1,26 @@
+<div class="scrollable">
+    <div class="scrollable-content">
+        <div class="row">
+            <div class="col-md-12">
+                <br />
+                Blueprint
+                <select ng-options="plano as plano.code for plano in planos" ng-model="itemplano" style="width:200px;"></select>
+                <div class="btn-group">
+                    <label class="btn btn-default" ng-click="valorzoom='50'">50%</label>
+                    <label class="btn btn-default" ng-click="valorzoom='100'">100%</label>
+                    <label class="btn btn-default" ng-click="valorzoom='200'">200%</label>
+                    <label class="btn btn-default" ng-click="valorzoom='300'">300%</label>
+                    <label class="btn btn-default" ng-click="valorzoom='400'">400%</label>
+
+                </div>
+                <input type="number" ng-model="valorzoom"
+                       min="10" max="1000" size="25" style="width:50px;">%
+                <br />
+            </div>
+            <div class="row">
+                <img ng-src="{{itemplano.src}}" ng-init="valorzoom='100%'" alt="" width="{{ valorzoom }}%" />
+            </div>
+        </div>
+      </div>
+    </div>
+

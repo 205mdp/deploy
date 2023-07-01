@@ -1,0 +1,47 @@
+
+   
+        <div class="scrollable">
+            <div class="scrollable-content">
+                <h1>Response Team</h1>
+                <input type="text" class="form-controlUI" placeholder="Search" ng-model="nameContacto" style="width:100%">
+               
+                <div>
+                   
+
+                    <div class="row col-md-12" ng-repeat-start="contacto in contactoshotel| filter:nameContacto" style="border-top:1px solid black">
+                        <div class="col-md-12">
+                            {{ contacto.position }}
+                        </div>
+                        <div class="col-md-12" ng-repeat="persona in contacto.personal | filter:nameContacto" style="border-top:1px solid gray">
+
+                            <ul>
+                                <li>{{ persona.team }}</li>
+                                <li>Name:<a>{{ persona.name }}</a></li>
+                                <li>Title:<a>{{ persona.title }}</a></li>
+                                <li>Business Phone:<a>{{ persona.bussinesphone }}</a></li>
+                                <li>Main Switchboard:<a>{{ persona.mainswichboard }}</a></li>
+
+                                <li>Email:<a>{{ persona.email }}</a></li>
+                                <li>Email Home:<a>{{ persona.emailhome }}</a></li>
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+
+                    <div ng-repeat-end style="display:none"></div>
+                    <!--<ul>
+                        <li ng-repeat-start="movie in movies | filter:name | orderBy:'releaseDate'">{{ movie.releaseDate | date:'dd/MM' }} - {{ movie.movieName }}</li>
+                        <ul>
+                            <li ng-repeat="item in movie.items">{{ item.name }}</li>
+
+                        </ul>
+
+                        <li ng-repeat-end style="display:none"></li>
+                    </ul >-->
+
+                </div>
+
+            </div>
+        </div>

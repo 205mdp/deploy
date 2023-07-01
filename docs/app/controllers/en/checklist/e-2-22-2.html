@@ -1,0 +1,66 @@
+//cambiar 
+//TodoCtrl_2_8
+//localStorageDemo_2_8
+//simpleFactoryx_2_8
+
+demoApp.controller('TodoCtrl_2_8', function ($scope, $http, localStorageService, simpleFactoryx_2_8) {
+    init();
+    function init() {
+        var tempx = localStorageService.get('localStorageDemo_2_8');
+        if (tempx == null) {
+            localStorageService.add('localStorageDemo_2_8', simpleFactoryx_2_8.gettodos());
+        }
+        $scope.todosx = localStorageService.get('localStorageDemo_2_8');
+    }
+
+
+    $scope.test = function (todo) {
+        //   alert(todo.text);
+        localStorageService.add('localStorageDemo_2_8', $scope.todosx);
+        //localStorage["storagetest"] = $scope.todos;
+    };
+
+});
+
+
+//let everthing know that we need to save state now.
+demoApp.factory("simpleFactoryx_2_8", function ($http) {
+
+    //////////////////////
+    var todotemp = {
+        titulogeneral: "E:2.22.2 HURRICANE/TROPICAL STORM/CYCLONE",
+    version: "1.0",
+    fecharevision: "27-08-2014",
+    revisadopor: "Ron Ziv",
+    elementos: [{
+        titulo: 'XXXX',
+       texto:'For Hotels located in coastal regions, associates should be aware that hurricane and cyclone seasons are typically from June through November.    Such storms are known by three different names, depending upon the part of the world where they originate:',
+        datos: [ 
+
+        datos: [
+	{ done: false, id: 1, text: 'Hurricane – Atlantic and Eastern Pacific oceans' },
+	{ done: false, id: 1, text: 'Cyclone – Indian Ocean' },
+	{ done: false, id: 1, text: 'Typhoon – Western Pacific Ocean' },
+ ]
+        },
+
+texto:'If the threat of a hurricane or cyclone has been identified for your area by weather authorities, please continue to monitor the storm closely.',
+texto:'For this plan, the term Hurricane will be used, but virtually all aspects apply equally to Cyclones and Typhoons.  With each type the hazards include storm surge, high winds, tornados and flooding.',
+
+texto:'A Hurricane Watch indicates the possibility that your community could experience hurricane conditions within 36 hours. A Hurricane Warning means that hurricane conditions are expected within 24 hours.  During a Hurricane Watch associates should begin preparing for the possibility of a hurricane. Hurricane Warnings should be taken seriously and all preparations should already be underway. Please refer to the appropriate checklist for your department and ensure all tasks are completed thoroughly.',
+
+texto:'If authorities order evacuation of an area and such evacuation is possible, follow the instructions of authorities.  Utilize the following procedures as appropriate.  ',
+
+
+    ///////////////////////////////
+    var factory = {};
+    factory.gettodos = function () {
+        var todoreturn;
+        var temp;
+
+        temp = todotemp;
+        return temp;
+    }
+
+    return factory;
+});

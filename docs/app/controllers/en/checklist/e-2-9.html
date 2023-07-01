@@ -1,0 +1,53 @@
+//cambiar 
+//TodoCtrl_2_8
+//localStorageDemo_2_8
+//simpleFactoryx_2_8
+
+demoApp.controller('TodoCtrl_2_8', function ($scope, $http, localStorageService, simpleFactoryx_2_8) {
+    init();
+    function init() {
+        var tempx = localStorageService.get('localStorageDemo_2_8');
+        if (tempx == null) {
+            localStorageService.add('localStorageDemo_2_8', simpleFactoryx_2_8.gettodos());
+        }
+        $scope.todosx = localStorageService.get('localStorageDemo_2_8');
+    }
+
+
+    $scope.test = function (todo) {
+        //   alert(todo.text);
+        localStorageService.add('localStorageDemo_2_8', $scope.todosx);
+        //localStorage["storagetest"] = $scope.todos;
+    };
+
+});
+
+
+//let everthing know that we need to save state now.
+demoApp.factory("simpleFactoryx_2_8", function ($http) {
+    //////////////////////
+    var todotemp = {
+        titulogeneral: "E:2.9 FIRE OR EXPLOSION',
+ texto:'A fire or explosion has the potential to create panic among guests and associates.  In order to minimize the possibility of this kind of response, it is vitally important that all hotel associates are trained or made aware of proper procedures to follow should a fire or explosion occur.  There will be virtually no time to read a manual once an emergency occurs; therefore, all associates should know their responsibilities beforehand as part of their job duties.
+',
+texto:'Each hotel should establish as part of its emergency response plan a designated assembly area for guests and associates in the event of a fire or explosion.  There should also be a back-up area established in case the first area is unusable.',
+
+texto:'Each hotel should also establish areas beforehand for both primary and back-up Fire/Explosion Command Posts.',
+
+texto:'All associates should be trained in how to use a fire extinguisher to lessen the risk that small, contained fires grow into infernos that cause death, extensive injuries or substantial damage to property.',
+
+texto:'All associates should recognize as well the importance of staying calm in a fire or explosion emergency.  At the same time, associates must be firm with guests to ensure order is maintained and chaos does not erupt.',
+
+
+    ///////////////////////////////
+    var factory = {};
+    factory.gettodos = function () {
+        var todoreturn;
+        var temp;
+
+        temp = todotemp;
+        return temp;
+    }
+
+    return factory;
+});

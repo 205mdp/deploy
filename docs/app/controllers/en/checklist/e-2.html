@@ -1,0 +1,87 @@
+//cambiar 
+//TodoCtrl_2_8
+//localStorageDemo_2_8
+//simpleFactoryx_2_8
+
+demoApp.controller('TodoCtrl_2_8', function ($scope, $http, localStorageService, simpleFactoryx_2_8) {
+    init();
+    function init() {
+        var tempx = localStorageService.get('localStorageDemo_2_8');
+        if (tempx == null) {
+            localStorageService.add('localStorageDemo_2_8', simpleFactoryx_2_8.gettodos());
+        }
+        $scope.todosx = localStorageService.get('localStorageDemo_2_8');
+    }
+
+
+    $scope.test = function (todo) {
+        //   alert(todo.text);
+        localStorageService.add('localStorageDemo_2_8', $scope.todosx);
+        //localStorage["storagetest"] = $scope.todos;
+    };
+
+});
+
+
+//let everthing know that we need to save state now.
+demoApp.factory("simpleFactoryx_2_8", function ($http) {
+    //////////////////////
+    var todotemp = {
+        titulogeneral: "E:2	EMERGENCIES",
+    version: "1.0",
+    fecharevision: "27-08-2014",
+    revisadopor: "Ron Ziv",
+    elementos: [{
+        titulo: 'XXXX',
+        texto: 'ZZZZ',
+        datos: [
+texto:'This section is to provide actions that should be taken for specific emergencies.  Not every conceivable emergency is covered but the following sections should provide guidance for the ones specifically included as well as those that might be similar.',
+
+texto:'Included here are:',
+
+        datos: [
+	{ done: false, id: 1, text: 'E:2.1	Bomb Threat' },
+	{ done: false, id: 1, text: 'E:2.2	Civil Disturbance' },
+	{ done: false, id: 1, text: 'E:2.3	Communicable Disease' },
+	{ done: false, id: 1, text: 'E:2.4	Community/Local Area Crises' },
+	{ done: false, id: 1, text: 'E:2.5	Criminal Activity' },
+	{ done: false, id: 1, text: 'E:2.6	Death on Premises' },
+	{ done: false, id: 1, text: 'E:2.7	Earthquakes/Tsunami' },
+	{ done: false, id: 1, text: 'E:2.8	Elevator Emergencies' },
+	{ done: false, id: 1, text: 'E:2.9	Fire or Explosion' },
+	{ done: false, id: 1, text: 'E:2.10	Foodborne Illness/Death' },
+	{ done: false, id: 1, text: 'E:2.11	Hazardous Material/Chemical Spill' },
+	{ done: false, id: 1, text: 'E:2.12	Hostage Situation' },
+	{ done: false, id: 1, text: 'E:2.13	Injury or Illness' },
+	{ done: false, id: 1, text: 'E:2.14	Kidnap/Extortion' },
+	{ done: false, id: 1, text: 'E:2.15	Labor Action/Strike' },
+	{ done: false, id: 1, text: 'E:2.16	Other Emergencies' },
+	{ done: false, id: 1, text: 'E:2.17	Structural Collapse' },
+	{ done: false, id: 1, text: 'E:2.18	Suspicious Item or Package' },
+	{ done: false, id: 1, text: 'E:2.19	Terrorism or Threats of Terrorism' },
+	{ done: false, id: 1, text: 'E:2.20	Transportation Incident' },
+	{ done: false, id: 1, text: 'E:2.21	Utility Outages' },
+	{ done: false, id: 1, text: 'E:2.22	Weather Emergencies' },
+	
+ ]
+        },
+
+
+
+
+
+texto:'<strong>Important Note:  Not all properties have the same management positions.  For brevity, “Security” and/or “Director of Security” is intended to mean “the designated leader/department responsible for security.”  “Operator” may be interpreted to be “Night Concierge” or other positions that vary by Hotel.</strong>',
+
+
+    ///////////////////////////////
+    var factory = {};
+    factory.gettodos = function () {
+        var todoreturn;
+        var temp;
+
+        temp = todotemp;
+        return temp;
+    }
+
+    return factory;
+});

@@ -1,0 +1,28 @@
+﻿<div class="scrollable">
+    <div class="scrollable-content">
+        <h1>Index</h1>
+        <br />
+        
+        <div>
+            <ul>
+                <li ng-repeat-start="movie in movies ">{{ movie.name }}</li>
+                <ul>
+                    <li ng-repeat="xc in movie.items  | filter:name "><a ng-href="{{ xc.link }}">{{ xc.item }}</a> </li>
+
+                </ul>
+
+                <li ng-repeat-end style="display:none"></li>
+            </ul>
+            <!--<ul>
+                <li ng-repeat-start="movie in movies | filter:name | orderBy:'releaseDate'">{{ movie.releaseDate | date:'dd/MM' }} - {{ movie.movieName }}</li>
+                <ul>
+                    <li ng-repeat="item in movie.items">{{ item.name }}</li>
+
+                </ul>
+
+                <li ng-repeat-end style="display:none"></li>
+            </ul >-->
+
+        </div>
+    </div>
+</div>

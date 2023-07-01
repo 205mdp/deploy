@@ -1,0 +1,89 @@
+//cambiar 
+//TodoCtrl_2_8
+//localStorageDemo_2_8
+//simpleFactoryx_2_8
+
+demoApp.controller('TodoCtrl_2_8', function ($scope, $http, localStorageService, simpleFactoryx_2_8) {
+    init();
+    function init() {
+        var tempx = localStorageService.get('localStorageDemo_2_8');
+        if (tempx == null) {
+            localStorageService.add('localStorageDemo_2_8', simpleFactoryx_2_8.gettodos());
+        }
+        $scope.todosx = localStorageService.get('localStorageDemo_2_8');
+    }
+
+
+    $scope.test = function (todo) {
+        //   alert(todo.text);
+        localStorageService.add('localStorageDemo_2_8', $scope.todosx);
+        //localStorage["storagetest"] = $scope.todos;
+    };
+
+});
+
+
+//let everthing know that we need to save state now.
+demoApp.factory("simpleFactoryx_2_8", function ($http) {
+    //////////////////////
+    var todotemp = {
+        titulogeneral: "E:3.1.1	DOCUMENTATION",
+    version: "1.0",
+    fecharevision: "27-08-2014",
+    revisadopor: "Ron Ziv",
+    elementos: [{
+        titulo: 'General Manager',
+        texto: 'The General Manager should ensure proper documentation of all emergencies.',
+        datos: [
+	{ done: false, id: 1, text: 'Physical damage should be documented with both photographs and video, whenever possible.  Hotels should maintain on property as part of their crisis planning, both still and video cameras.' ,
+	        datos: [
+		{ done: false, id: 1, text: 'Include photos/video of relevant signage in the area of the incident or impacted areas' },
+		{ done: false, id: 1, text: 'Document visually any relevant security measures in place' }
+	 ]
+        },
+	{ done: false, id: 1, text: 'All costs of managing the emergency need to be documented, with receipts when appropriate, and should be coordinated with the Risk Department..' },
+	{ done: false, id: 1, text: 'Such costs could include:' ,
+	        datos: [
+		{ done: false, id: 1, text: 'Overtime' },
+		{ done: false, id: 1, text: 'Loss of booked revenue' },
+		{ done: false, id: 1, text: 'Materials used directly in the emergency (fire extinguishers, snow & ice removal material)' },
+		{ done: false, id: 1, text: 'Food & Beverage – extraordinary quantities used to serve displaced guests or product damaged' },
+		{ done: false, id: 1, text: 'Transportation costs' },
+		{ done: false, id: 1, text: 'Contractors utilized' },
+		{ done: false, id: 1, text: 'Repair technicians' },
+		{ done: false, id: 1, text: 'Medical costs' },
+		{ done: false, id: 1, text: 'Replace any materials removed from the Emergency & Crisis Management Plan' },
+		{ done: false, id: 1, text: 'Provide the “after action” review to the Area Managing Director/Regional Vice President.' }
+	
+	 ]
+        },
+
+
+ {
+        titulo: 'E:3.2 CLEANUP',
+ 
+texto:'Wherever possible, hotel staff will be utilized for clean-up.  Outside contractors may be required for certain jobs.',
+
+texto:'Utilize contractors identified in the Preparation Section for any cleanup requirements that can’t be met by Hotel associates.
+',
+
+ {
+        titulo: 'E:3.3 REPAIRS',
+
+texto:'Repairs should be made under the direction of the General Manager and Director of Engineering.  Other members of the Emergency Management Committee should be utilized as needed and appropriate to the nature and extent of the emergency.',
+ 
+texto:'Utilize contractors identified in the Preparation Section for repairs beyond those which can be handled by Hotel associates.',
+
+
+    ///////////////////////////////
+    var factory = {};
+    factory.gettodos = function () {
+        var todoreturn;
+        var temp;
+
+        temp = todotemp;
+        return temp;
+    }
+
+    return factory;
+});

@@ -1,0 +1,27 @@
+<div class="scrollable">
+    <div class="scrollable-content">
+        <h2>Log</h2>
+        <div ng-controller="logxCtrl">
+            <span>{{remaining()}} of {{logs.length}} remaining</span>
+            <form ng-submit="addTodoLog()">
+                <textarea class="form-control" ng-model="todoTextlog"
+                          placeholder="Agregue un evento.."></textarea>
+              
+               </br>
+                <button type="submit" class="btn btn-default">
+                    <i class="fa fa-check fa-navbar"></i> Add
+                </button>
+                <button type="button" ng-click="borrar()" class="btn btn-default">
+                    <i class="fa fa-trash-o fa-navbar"></i>
+                </button>
+            </form>
+            <ul class="unstyled">
+                <li ng-repeat="log in logs | filter:name">
+                    <span>{{log.fecha| date:'short'}} - </span>
+                    <span>{{log.text}}</span>
+                </li>
+            </ul>
+
+        </div>
+</div>
+</div>

@@ -1,0 +1,15 @@
+[
+{ "id": 1, "title": "Evacuation", "img":  "Images/lb/evacuation.jpg", "txtcss": "metro gpcolored281f", "link": "#/evacuacion" },
+{ "id": 1, "title": "Accidentes", "img": "Images/lb/Accidentes.jpg", "txtcss": "metro gpcolorba1e71", "link": "#/2-12-HeridasyEnfermedad" },
+{ "id": 2, "title": "Amenaza de Bomba", "img": "Images/lb/Amenaza.jpg", "txtcss": "metro gpcolorf7941d", "link": "#/bomba" },
+{ "id": 3, "title": "Incendio" , "img": "Images/lb/Incendio.jpg", "txtcss": "metro gpcolor552732", "link": "#/2-8-IncendioExplosion" },
+{ "id": 4, "title": "Sismo", "img": "Images/lb/Sismo.jpg", "txtcss": "metro gpcolore55f56", "link": "#/2-18-terremotos" },
+{ "id": 5, "title": "Extorsion", "img": "Images/lb/Extorsion.jpg", "txtcss": "metro gpcolorf0482b", "link": "#/contactoshotel" },
+{ "id": 6, "title": "Defuncion", "img": "Images/lb/Defuncion.jpg", "txtcss": "metro gpcolor3b1955", "link": "#/muerte" },
+{ "id": 7, "title": "Asalto", "img": "Images/lb/Asalto.jpg", "txtcss": "metro gpcolor43aaa6", "link": "#/2-5-ActividadesDelictivas" },
+{ "id": 8, "title": "Huracan", "img": "Images/lb/Huracan.jpg", "txtcss": "metro gpcolor43aaa6", "link": "#/2-17-2-Huracanes" },
+{ "id": 9, "title": "Inundacion", "img": "Images/lb/Inundacion.jpg", "txtcss": "metro gpcolora3d29c", "link": "#/2-17-3-Inundaciones" },
+{ "id": 10, "title": "Secuentro", "img": "Images/lb/Secuestro.jpg", "txtcss": "metro gpcolorcbc42d", "link": "#/2-11-TomaDeRehenes" },
+{ "id": 11, "title": "Manifestacion", "img": "Images/lb/Manifestacion.jpg", "txtcss": "metro gpcolor34404e", "link": "#/2-2-DisturbiosSociales" },
+{ "id": 12, "title": "Listado", "img": "Images/listw.png", "txtcss": "metro gpcolormidsilver", "link": "#/listado" }
+]

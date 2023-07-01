@@ -1,0 +1,33 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 06C0-032B
+
+ Directory of C:\cordobatestX\assets\www\files\planos
+
+08/05/2014  11:17 a.m.    <DIR>          .
+08/05/2014  11:17 a.m.    <DIR>          ..
+07/05/2014  01:27 p.m.           444.793 AZOTEA.jpg
+08/05/2014  11:07 a.m.           188.312 CORTE-LONGITUDINAL-2.jpg
+08/05/2014  11:07 a.m.           222.100 CORTE-LONGITUDINAL-3.jpg
+08/05/2014  11:07 a.m.           144.836 CORTE-LONGITUDINAL.jpg
+08/05/2014  11:07 a.m.           240.496 CORTE-TRANSVERSAL-2.jpg
+08/05/2014  11:07 a.m.           195.738 CORTE-TRANSVERSAL.jpg
+08/05/2014  11:05 a.m.           266.045 FACHADA-FRONTAL.jpg
+08/05/2014  11:05 a.m.           263.572 FACHADA-POSTERIOR.jpg
+08/05/2014  11:05 a.m.           230.700 FACHADAS-LATERALES.jpg
+08/05/2014  11:17 a.m.                 0 list.txt
+08/05/2014  11:06 a.m.           370.551 LOBBY.jpg
+08/05/2014  11:04 a.m.           151.820 PISO-1.jpg
+08/05/2014  11:04 a.m.           158.226 PISO-10.jpg
+08/05/2014  11:04 a.m.           143.819 PISO-11.jpg
+08/05/2014  11:04 a.m.           153.072 PISOS-2-AL-9.jpg
+08/05/2014  11:04 a.m.           218.602 SOTANO-1.jpg
+08/05/2014  11:04 a.m.            81.860 SOTANO-2.jpg
+08/05/2014  11:04 a.m.            77.421 sotano-3.jpg
+08/05/2014  11:03 a.m.           287.575 SOTANO-4.jpg
+08/05/2014  11:03 a.m.           279.379 SOTANO-5.jpg
+08/05/2014  11:03 a.m.           276.618 SOTANO-6.jpg
+08/05/2014  11:03 a.m.           263.516 SOTANO-7.jpg
+08/05/2014  11:03 a.m.           265.757 SOTANO-8.jpg
+08/05/2014  11:00 a.m.           259.221 SOTANO-9.jpg
+              24 File(s)      5.184.029 bytes
+               2 Dir(s)  17.070.759.936 bytes free

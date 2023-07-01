@@ -1,0 +1,52 @@
+﻿
+<div class="scrollable">
+    <div class="scrollable-content">
+
+        <h1>Authorities</h1>
+        <br />
+        <div>
+            <!--<ul>
+                <li ng-repeat-start="contacto in contactos| filter:name">{{ contacto.position }}</li>
+                <ul>
+                    <li ng-repeat="xc in contacto.personal  "><a ng-href="{{ xc.name }}">{{ xc.name }}</a> </li>
+
+                </ul>
+
+                <li ng-repeat-end style="display:none"></li>
+            </ul>-->
+
+            <div class="row col-md-12" ng-repeat-start="auto in autoridades| filter:name" style="border-top:1px solid black">
+                <div class="col-md-12">
+
+                    <h3>{{ auto.servicios }}</h3>
+                </div>
+                <div class="col-lg-5" ng-repeat="persona in auto.personal">
+
+                    <ul>
+
+                        <li>Nombre:<a>{{ persona.name }}</a></li>
+                        <li>Phone:<a>{{ persona.phone }}</a></li>
+                        <li>Phone2:<a>{{ persona.phone2 }}</a></li>
+                        <li>Dirección:<a>{{ persona.direccion }}</a></li>
+                        <li>Email:<a>{{ persona.email }}</a></li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+            <div ng-repeat-end style="display:none"></div>
+            <!--<ul>
+                <li ng-repeat-start="movie in movies | filter:name | orderBy:'releaseDate'">{{ movie.releaseDate | date:'dd/MM' }} - {{ movie.movieName }}</li>
+                <ul>
+                    <li ng-repeat="item in movie.items">{{ item.name }}</li>
+
+                </ul>
+
+                <li ng-repeat-end style="display:none"></li>
+            </ul >-->
+
+        </div>
+</div>
+</div>

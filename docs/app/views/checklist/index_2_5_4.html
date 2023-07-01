@@ -1,0 +1,28 @@
+<!--TodoCtrl-->
+<div class="scrollable">
+    <div class="scrollable-content">
+        <div class="row">
+            <div class="col-md-11">
+            <div ng-controller="logxCtrl">
+                <div ng-controller="TodoCtrl_2_5_4">
+                    <h2>{{todosx.titulogeneral}}</h2>
+                    <div ng-repeat-start="todox in todosx.elementos">
+                        <h2>{{todox.titulo}}</h2>
+                        <p>{{todox.texto}}</p>
+                        <ul class="list-unstyled">
+                            <li ng-repeat="todo in todox.datos">
+                                <input type="checkbox" ng-change="test(todo)" ng-model="todo.done">
+                                <span class="done-{{todo.done}}" ng-bind-html="todo.text"> </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div ng-repeat-end>
+                    </div>
+                    Review - {{todosx.fecharevision}} - {{todosx.revisadopor}} - {{todosx.version}}
+                </div>
+            </div>
+             </div>
+
+        </div>
+    </div>
+</div>

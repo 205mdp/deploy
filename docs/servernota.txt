@@ -1,0 +1,20 @@
+server Nota
+
+.htaccess 
+Header add Access-Control-Allow-Origin "*"
+Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+
+By default Apache has .htaccess disabled, so you would have to enable it.
+
+Got to and edit /etc/apache2/httpd.conf
+
+You will find a section that looks like this:
+
+<Directory />
+Options FollowSymLinks
+AllowOverride None
+Order deny,allow
+Deny from all
+</Directory>
+You have to change AllowOverride None to AllowOverride All and then find the section right after which should start with: <Directory "/Library/WebServer/Documents"> and you'll have to change the same thing there to AllowOverride All

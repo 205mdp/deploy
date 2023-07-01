@@ -1,0 +1,69 @@
+//cambiar 
+//TodoCtrl_2_8
+//localStorageDemo_2_8
+//simpleFactoryx_2_8
+
+demoApp.controller('TodoCtrl_2_8', function ($scope, $http, localStorageService, simpleFactoryx_2_8) {
+    init();
+    function init() {
+        var tempx = localStorageService.get('localStorageDemo_2_8');
+        if (tempx == null) {
+            localStorageService.add('localStorageDemo_2_8', simpleFactoryx_2_8.gettodos());
+        }
+        $scope.todosx = localStorageService.get('localStorageDemo_2_8');
+    }
+
+
+    $scope.test = function (todo) {
+        //   alert(todo.text);
+        localStorageService.add('localStorageDemo_2_8', $scope.todosx);
+        //localStorage["storagetest"] = $scope.todos;
+    };
+
+});
+
+
+//let everthing know that we need to save state now.
+demoApp.factory("simpleFactoryx_2_8", function ($http) {
+    //////////////////////
+    var todotemp = {
+        titulogeneral: "E:3	RECOVERY",
+    version: "1.0",
+    fecharevision: "27-08-2014",
+    revisadopor: "Ron Ziv",
+    elementos: [{
+        titulo: 'XXXX',
+        texto: 'ZZZZ',
+        datos: [
+ 
+ {
+        titulo: 'E:3.1 DAMAGE ASSESSMENT',
+
+texto:'A Post-Emergency Assessment Team should begin work even as the emergency itself is being finally resolved.  The Team could be comprised of:',
+
+        datos: [
+	{ done: false, id: 1, text: 'General Manager' },
+	{ done: false, id: 1, text: 'Operations Manager' },
+	{ done: false, id: 1, text: 'Director of Engineering' },
+	{ done: false, id: 1, text: 'Director of Security' },
+
+ ]
+        },
+
+texto:'Following an emergency, recovery and restoration of the hotel to normal operation status becomes a major concern.  If the building has sustained limited damage and is otherwise structurally sound and deemed safe for occupancy by proper authorities, recovery efforts will center around activities necessary to restore order to accommodate guest needs.  If the building has sustained extensive damage and authorities will not allow occupancy, recovery action is beyond the scope of this plan.',
+
+texto:'Prime emphasis in Damage Assessment and Recovery should be placed on how to solve a multitude of people-oriented problems.  Whenever possible, the hotel associates should be used in this effort.  The skills and services of special agencies in the community, such as the Red Cross, could also be utilized if the situation warrants their involvement.  The services of other Starwood properties or neighboring hotels may be required to accommodate evacuated guests and later arrivals.  ',
+
+
+    ///////////////////////////////
+    var factory = {};
+    factory.gettodos = function () {
+        var todoreturn;
+        var temp;
+
+        temp = todotemp;
+        return temp;
+    }
+
+    return factory;
+});

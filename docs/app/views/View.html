@@ -1,0 +1,18 @@
+﻿<div class="scrollable">
+    <div class="scrollable-content">
+        
+            <div ng-repeat="mt in metro | filter:name" class="col-md-3 ">
+            <!-- ng-click= "{{ mt.click }}" -->
+                <a class="metroa" ng-href="{{ mt.link }}" href="#" >
+                    <div class="{{ mt.txtcss }}">
+                        <img ng-src="{{ mt.img }}" height="100%" style="margin-left:0" />
+                        	
+                       
+
+                    </div>
+                </a>
+            </div>
+       
+    </div>
+</div>
+
